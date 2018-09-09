@@ -22,8 +22,8 @@ message: Welcome to the mysterious area with code.
 4. XGBOOST <br>
 5. Kmeans & Hierarchical Clustering<br>
 6. ngram <br>
-文本概率计算 <br>
-平滑 <br>
+文本概率计算 
+平滑 
 7. 翻译模型 <br>
 
 ## Technology
@@ -31,8 +31,8 @@ message: Welcome to the mysterious area with code.
 2. LDA 主题模型 <br>
 3. XGBOOST & Random Forest & Adaboost & Bagging <br>
 4. Bayes' theorem
-The priori probability <br>
-The posterior probability <br>
+The priori probability 
+The posterior probability 
 
 ### Coding
 1. 随机取样
