@@ -3,7 +3,7 @@ title: Convolutional Nerual Network
 categories: 技术干货
 ---
 
--- 关于 CNN 神经网络的零零碎碎。
+-- 关于 CNN 的零零碎碎。
 <!-- more -->
 ## INPUT
 1. One Hot Vector (分字)<br>
