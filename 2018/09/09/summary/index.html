@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="– 整体大纲。Abstract 简历的几个缺点，在于每个项目都比较浅，没有深入优化的点。目前来说有几个重要项目：热点挖掘（聚类及实时聚类）CNN 意图识别、Model PK、RNN 长意图识别、ngram 和 RNN 的语言模型（平滑）以及之后做的翻译模型。 算法题基础太弱，需要多刷题 模型知识了解不够，每一元素的作用，调参的方向。  Projects CNN 模型  RNN 模型  MODEL">
+<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Summary【UPDATING】">
 <meta property="og:url" content="http://clairep.me/2018/09/09/summary/index.html">
 <meta property="og:site_name" content="Claire&#39;s Blog">
-<meta property="og:description" content="– 整体大纲。Abstract 简历的几个缺点，在于每个项目都比较浅，没有深入优化的点。目前来说有几个重要项目：热点挖掘（聚类及实时聚类）CNN 意图识别、Model PK、RNN 长意图识别、ngram 和 RNN 的语言模型（平滑）以及之后做的翻译模型。 算法题基础太弱，需要多刷题 模型知识了解不够，每一元素的作用，调参的方向。  Projects CNN 模型  RNN 模型  MODEL">
+<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-09T15:17:38.047Z">
+<meta property="og:updated_time" content="2018-09-09T15:39:38.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Summary【UPDATING】">
-<meta name="twitter:description" content="– 整体大纲。Abstract 简历的几个缺点，在于每个项目都比较浅，没有深入优化的点。目前来说有几个重要项目：热点挖掘（聚类及实时聚类）CNN 意图识别、Model PK、RNN 长意图识别、ngram 和 RNN 的语言模型（平滑）以及之后做的翻译模型。 算法题基础太弱，需要多刷题 模型知识了解不够，每一元素的作用，调参的方向。  Projects CNN 模型  RNN 模型  MODEL">
+<meta name="twitter:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
 
 
 
@@ -336,35 +336,46 @@
       
 
       
-        <h3 id="–-整体大纲。"><a href="#–-整体大纲。" class="headerlink" title="– 整体大纲。"></a>– 整体大纲。</h3><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><ol>
-<li>简历的几个缺点，在于每个项目都比较浅，没有深入优化的点。<br><br>目前来说有几个重要项目：热点挖掘（聚类及实时聚类）CNN 意图识别、Model PK、RNN 长意图识别、ngram 和 RNN 的语言模型（平滑）以及之后做的翻译模型。</li>
-<li>算法题基础太弱，需要多刷题</li>
-<li>模型知识了解不够，每一元素的作用，调参的方向。</li>
-</ol>
-<h2 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h2><ol>
-<li>CNN 模型 <br></li>
-<li>RNN 模型 <br></li>
-<li>MODEL PK <br></li>
-<li>XGBOOST <br></li>
-<li>Kmeans &amp; Hierarchical Clustering<br></li>
-<li>ngram <br><br>文本概率计算 <br><br>平滑 <br></li>
-<li>翻译模型 <br></li>
-</ol>
-<h2 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h2><ol>
-<li>SVD &amp; PCA <br></li>
-<li>LDA 主题模型 <br></li>
-<li>XGBOOST &amp; Random Forest &amp; Adaboost &amp; Bagging <br></li>
-<li>Bayes’ theorem<br>The priori probability <br><br>The posterior probability <br></li>
-</ol>
-<h3 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h3><ol>
-<li>随机取样</li>
-<li>取中位数</li>
-<li>merge linked list</li>
-<li>reverse linked list</li>
-<li>different sort</li>
-<li>Traversal Tree</li>
-</ol>
-
+        <script src=/js/crypto-js.js></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">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</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>
       
     </div>
     
@@ -448,17 +459,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -535,22 +537,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#–-整体大纲。"><span class="nav-number">1.</span> <span class="nav-text">– 整体大纲。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Abstract"><span class="nav-number"></span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Projects"><span class="nav-number"></span> <span class="nav-text">Projects</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Technology"><span class="nav-number"></span> <span class="nav-text">Technology</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Coding"><span class="nav-number">1.</span> <span class="nav-text">Coding</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
