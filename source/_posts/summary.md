@@ -2,9 +2,9 @@
 title: The Summary【UPDATING】
 categories: 技术干货
 top: true
-password: HuanDong66
-abstract: 这是一个秘密 ^_^
-message: 这是一个秘密 ^_^
+password: JustKidding
+abstract: Well, this is a secret. ^_^
+message: Well, this is a secret. ^_^
 ---
 
 -- 整体大纲。
