@@ -3,8 +3,8 @@ title: The Summary【UPDATING】
 categories: 技术干货
 top: true
 password: HuanDong66
-abstract: -- Welcome to the mysterious area with code.
-message: Welcome to the mysterious area with code.
+abstract: 这是一个秘密 ^_^
+message: 这是一个秘密 ^_^
 ---
 
 -- 整体大纲。
