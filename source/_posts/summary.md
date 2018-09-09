@@ -1,13 +1,16 @@
 ---
 title: The Summary【UPDATING】
+subtitle: Subtitle #副标题
 categories: 技术干货
 top: true
+encrypt: true
+enc_pwd: HuanDong66
 ---
 
 ### -- 整体大纲。
 
 ## Abstract
-1. 简历的几个缺点，在于每个项目都比较浅，没有深入优化的点。<br>
+1. 每个项目都比较浅，没有深入优化的点。<br>
 目前来说有几个重要项目：热点挖掘（聚类及实时聚类）CNN 意图识别、Model PK、RNN 长意图识别、ngram 和 RNN 的语言模型（平滑）以及之后做的翻译模型。
 2. 算法题基础太弱，需要多刷题
 3. 模型知识了解不够，每一元素的作用，调参的方向。

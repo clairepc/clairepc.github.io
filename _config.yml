@@ -81,3 +81,7 @@ deploy:
   type: git
   repo: https://github.com/clairepc/clairepc.github.io.git
   branch: master
+
+# Password
+encrypt:
+  password: HuanDong66
